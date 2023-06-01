@@ -13,10 +13,10 @@ function BookingInfo({ updateBookingDetails }) {
                     <Input label="Date" type="date" customClass="booking-info__date" 
                     name="when" handleChange={ updateBookingDetails } />
                     <Input label="Time" type="text"
-                    name="time" handleChange={ updateBookingDetails } />
+                    name="time" customClass="booking-info__time" handleChange={ updateBookingDetails } />
                 </section>
                 <Input label="Number of awesome bowlers" type="number" customClass="booking-info__who"
-                name="people" handleChange={ updateBookingDetails } />
+                name="people" data-id="UserNumber" handleChange={ updateBookingDetails } />
                 <Input label="Number of lanes" type="number" customClass="booking-info__lanes"
                 name="lanes" handleChange={ updateBookingDetails } />
             </form>

@@ -23,12 +23,12 @@ function Confirmation() {
                     <Input label="Lanes" type="text" customClass="confirmation__input"
                     defaultValue={ state.confirmationDetails.lanes }
                     disabled="disabled" />
-                    <Input label="Booking number" type="text" customClass="confirmation__input"
+                    <Input label="Booking number" type="text" customClass="confirmation__input--ordernr"
                     defaultValue={ state.confirmationDetails.id }
                     disabled="disabled" />
                     <article className='confirmation__price'>
                         <p>Total:</p>
-                        <p>{ state.confirmationDetails.price } sek</p>
+                        <p customClass="confirmation__price">{ state.confirmationDetails.price } sek</p>
                     </article>
                     <button className='button confirmation__button'>Sweet, let's go!</button>
                 </form> : <h2 className='confirmation__no-booking'>Inga bokning gjord!</h2>
